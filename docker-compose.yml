@@ -13,7 +13,7 @@ services:
   nginx:
     image: nginx:alpine
     ports:
-      - "8081:80"  # ここを8080 → 8081などに変更
+      - "80:80"  # ここを8080 → 8081などに変更
     volumes:
       - .:/var/www/html
       - ./backend/nginx/default.conf:/etc/nginx/conf.d/default.conf
